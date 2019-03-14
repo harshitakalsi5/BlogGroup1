@@ -25,6 +25,15 @@
     ```
     /posts
     ```
+    - use the following format to post:
+    ```
+    {
+        "post": {
+            "title" : "foo",
+            "content" : "bar"
+        }
+    }
+    ```
 + Updates an Existing Post (PUT)
     ```
     /posts/:cuid
