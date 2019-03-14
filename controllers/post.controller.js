@@ -38,16 +38,16 @@ PostController.getPost = async (req, res) => {
 //add a new post
 PostController.addPost = async (req, res) => {
     try {
+        console.log(req);
         if (!req.body.post.title || !req.body.post.content) {
             res.status(403).end();
         }
 
         const newPost = new Post(req.body.post);
-        
         // Prevents cross-site scripting
         // Sanitize inputs
         newPost.title = sanitizeHtml(newPost.title);
-        newPost.content = sanitizeHtml(newPost.body);
+        newPost.content = sanitizeHtml(newPost.content);
 
         newPost.slug = slug(newPost.title.toLowerCase(), { lowercase: true });
         newPost.cuid = cuid();
