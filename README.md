@@ -1,6 +1,6 @@
 ## Setup instructions
 
-+ Make sure [mongoDB](https://docs.mongodb.com/manual/administration/install-community/) is install and running in background
++ Make sure [mongoDB](https://docs.mongodb.com/manual/administration/install-community/) is installed and running in background
 
 + Install all the dependencies using :
     ```
