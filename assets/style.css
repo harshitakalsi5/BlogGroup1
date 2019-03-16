@@ -1,0 +1,17 @@
+body
+{
+	margin:0;
+	padding:0;
+	height:100vh;
+}
+#particles-js
+{
+	background-image:url(5.jpg); 
+	background-size:cover;
+	height:1000px;
+	
+}
+.cover
+{
+	color:#ffffff;
+}
