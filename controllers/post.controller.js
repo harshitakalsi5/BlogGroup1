@@ -44,11 +44,11 @@ PostController.addPost = async (req, res) => {
         }
 
         const newPost = new Post(req.body.post);
-        // Prevents cross-site scripting
-        // Sanitize inputs
+        
         newPost.title = sanitizeHtml(newPost.title);
         newPost.content = sanitizeHtml(newPost.content);
-
+        newPost.author = sanitizeHtml(newPost.author);
+        newPost.email = sanitizeHtml(newPost.email);
         newPost.slug = slug(newPost.title.toLowerCase(), { lowercase: true });
         newPost.cuid = cuid();
 

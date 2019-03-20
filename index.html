@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>My Blog</title>
+<title>ALLINONECYBERTEAM</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="assets/style1.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -35,8 +35,8 @@
 </div> 
 
 
-<script type="text/javascript" src="particles.js"></script>
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="assets/particles.js"></script>
+<script type="text/javascript" src="assets/app.js"></script>
 
 
 
@@ -95,6 +95,7 @@
 	<br><br>
 	
 	
+	<div class="button" style="float:right;"><a href="#" style="text-decoration:none;">Older Posts</a></div>
 	
 	
 	
@@ -114,19 +115,25 @@
     
     
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" cols="50" rows="4" ></p>
-      <p>
+    <div>
+      <p><input id="author" class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input id="email" class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input id="title" class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+	  <!-- <p><input class="w3-input w3-padding-16" type="text" placeholder="Date(Ex:July 8,2018)" required name="Date"></p> -->
+ 
+	  
+	 <!-- <p><input class="w3-input w3-padding-16" type="text" placeholder="Enter your description of message here.." required name="Description"></p> -->
+	  
+	  <p> <textarea id="post-body" class="w3-input w3-padding-16" rows="6" cols="123" placeholder="Enter your message here.."></textarea> </p>
+      
+   
 	  
 	  <br>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button id="btnx" class="w3-button w3-light-grey w3-padding-large">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </div>
 	
 
 	<br><br>
@@ -152,7 +159,8 @@
 
 
 </div>
-
+<script src="assets/jquery.js"></script>
+<script src="assets/scripts.js"></script>
 </body>
 </html>
 

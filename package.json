@@ -28,6 +28,7 @@
     "express": "^4.16.4",
     "limax": "^1.7.0",
     "mongoose": "^5.4.19",
+    "requests": "^0.2.2",
     "sanitize-html": "^1.20.0"
   }
 }
