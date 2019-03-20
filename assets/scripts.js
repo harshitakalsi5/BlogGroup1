@@ -1,7 +1,7 @@
 $("#btnx").click(function() {
   $.ajax({
     method: "POST",
-    url: "http://localhost:3005/posts",
+    url: "http://localhost:3005/api/posts",
     dataType: 'json',
     contentType: 'application/json',
     data: JSON.stringify({
@@ -11,12 +11,11 @@ $("#btnx").click(function() {
         "title": $("#title").val(),
         "email": $("#email").val()
       }
-    }),
-    success: function (data, textStatus, jQxhr) {
-      $('#response pre').html(JSON.stringify(data));
-    },
-    error: function (jqXhr, textStatus, errorThrown) {
-      console.log(errorThrown);
-    }
+    })
+  }).done(function() {
+    $("#author").val("");
+    $("#post-body").val("");
+    $("#title").val("");
+    $("#email").val("");
   });
 });

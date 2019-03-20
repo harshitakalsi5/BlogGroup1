@@ -14,9 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use('/', posts);
-
-app.get('/api', (req, res) => res.send('Hello World!'));
+app.use('/api', posts);
 
 app.get('/', (req, res) => {
     res.sendFile('index.html', {root: __dirname});
