@@ -25,6 +25,19 @@
     ```
     /posts
     ```
+    format for posting:
+    ```
+    {
+      "post": {
+        "author": $("#author").val(),
+        "content": $("#post-body").val(),
+        "title": $("#title").val(),
+        "email": $("#email").val()
+      }
+    }
+    ```
+    - Extra properties that are generated
+        + See ```PostController.addPost``` in 'controllers/post.controller.js'
 + Updates an Existing Post (PUT)
     ```
     /posts/:cuid

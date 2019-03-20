@@ -19,5 +19,4 @@ $("#btnx").click(function() {
       console.log(errorThrown);
     }
   });
-  console.log('hahha');
 });
