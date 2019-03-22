@@ -38,7 +38,6 @@ PostController.getPost = async (req, res) => {
 //add a new post
 PostController.addPost = async (req, res) => {
     try {
-        console.log(req);
         if (!req.body.post.title || !req.body.post.content) {
             res.status(403).end();
         }
@@ -78,7 +77,6 @@ PostController.updatePost = async (req, res) => {
             } else {
                 post.title = req.body.post.title || post.title;
                 post.content = req.body.post.content || post.content;
-                console.log('Post about to be saved');
                 // Save 
                 post.save((err, saved) => {
                     if (err) {

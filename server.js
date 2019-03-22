@@ -20,6 +20,8 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', {root: __dirname});
 });
 
-app.listen(3005, () => {
-    console.log('server started - 3005');
-});
+// app.listen(3005, () => {
+//     console.log('server started - 3005');
+// });
+
+app.listen(process.env.PORT, process.env.IP);
