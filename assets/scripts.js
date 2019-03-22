@@ -4,7 +4,7 @@ var totalPostsPages;
 function refreshPosts() {
   $.ajax({
     method: "GET",
-    url: "http://localhost:3005/api/posts",
+    url: "https://agile-lake-25873.herokuapp.com/api/posts",
     dataType: 'json',
     contentType: 'application/json',
   }).done(function(data, status) {
@@ -73,7 +73,7 @@ newerBtn.addEventListener("click", function() {
 $("#btnx").click(function() {
   $.ajax({
     method: "POST",
-    url: "http://localhost:3005/api/posts",
+    url: "https://agile-lake-25873.herokuapp.com/posts",
     dataType: 'json',
     contentType: 'application/json',
     data: JSON.stringify({
