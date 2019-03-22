@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import PostController from '../controllers/post.controller';
+const Router = require('express').Router;
+const PostController = require('../controllers/post.controller');
 const router = new Router();
 
 // Get all Posts
@@ -26,4 +26,5 @@ router.put('/posts/:cuid', (req, res) => {
 router.delete('/posts/:cuid', (req, res) => {
     PostController.deletePost(req, res);
 });
-export default router;
+
+module.exports = router;

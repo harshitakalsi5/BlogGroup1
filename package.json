@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server.js --presets env",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,11 +17,6 @@
     "url": "https://github.com/harshitakalsi5/BlogGroup1/issues"
   },
   "homepage": "https://github.com/harshitakalsi5/BlogGroup1#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
-  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cuid": "^2.1.6",

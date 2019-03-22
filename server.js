@@ -1,7 +1,7 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import posts from './routes/posts.routes';
-import connectToDb from './db/connect';
+const express = require('express');
+const bodyParser = require('body-parser');
+const posts = require('./routes/posts.routes');
+const connectToDb = require('./db/connect');
 
 connectToDb();
 
@@ -24,4 +24,6 @@ app.get('/', (req, res) => {
 //     console.log('server started - 3005');
 // });
 
-app.listen(process.env.PORT, process.env.IP);
+app.listen(process.env.PORT, process.env.IP, function() {
+    console.log("deploy successfull");
+});
